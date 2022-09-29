@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+            Number.prototype.centena = function(inicio, fim){
+                return this >= inicio && this <= fim
+            }
+            var valorInformado = parseInt(prompt("Informe o valor de uma centena: "))
+            var resultado = 0;
+            
+            if (valorInformado.centena(100,999)){
+                var resultado = 10 * resultado + valorInformado % 10
+                var valorInformado = Math.floor(valorInformado/10)
+                alert `A centena informada inversa é: ${resultado}.`
+            } else {
+                alert `O valor informado não é uma centena!`
+            }
+    </script>
+</body>
+</html>

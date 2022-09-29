@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    <script>
+        const valorproduto = Number(prompt("Valor do produto em reais: "))
+        const porcentagem = valorproduto * 0.15 
+        const valortotal = valorproduto - porcentagem
+        
+            if(valortotal > 500){
+                alert(`Total com desconto é de: R$${valortotal.toFixed(2)}, CARO`)
+            }
+
+            else{
+                alert(`Total com desconto é de: R$${valortotal.toFixed(2)}, BARATO`)
+            }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        Number.prototype.valores = function(inicio, fim){
+        return this >= inicio && this <= fim
+        }
+        const nomeCliente = (prompt("Qual o nome do cliente? "))
+        const valorCompras = Number(prompt("Qual o da compra efetuada? "))
+        if(valorCompras.valores(0,200)){
+            const valorDesconto = valorCompras * 0.10
+            const valorFinal = valorCompras - valorDesconto
+            alert(`Cliente: ${nomeCliente} \n
+            Valor da Compra: ${valorCompras} \n
+            Desconto: 10% \n
+            Valor Final com Desconto: R$ ${valorFinal.toFixed(2)}`)
+        }
+        else if (valorCompras.valores(201, 500)){
+            const valorDesconto = valorCompras * 0.15
+            const valorFinal = valorCompras - valorDesconto
+            alert(`Cliente: ${nomeCliente} \n
+            Valor da Compra: ${valorCompras} \n
+            Desconto: 15% \n
+            Valor Final com Desconto: R$ ${valorFinal.toFixed(2)}`)
+        }
+        else if (valorCompras =>(501)){
+            const valorDesconto = valorCompras * 0.20
+            const valorFinal = valorCompras - valorDesconto
+            alert(`Cliente: ${nomeCliente} \n
+            Valor da Compra: ${valorCompras} \n
+            Desconto: 20% \n
+            Valor Final com Desconto: R$ ${valorFinal.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

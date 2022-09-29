@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+</head>
+<body>
+    <script>
+        const sexo = Number(prompt("Sexo 1 = M ou 2 = F? "))
+        const altura = Number(prompt("Digite sua altura (EX: 1.72): "))
+        const pesoidealhomens = (72 * altura) - 58
+        const pesoidealmulheres = (62 * altura) - 44
+
+            if(sexo == 1){
+                alert(`Peso ideal é de:${pesoidealhomens} Kg`)
+            }
+
+            else{
+                alert(`Peso ideal é de:${pesoidealmulheres} Kg`)
+            }
+
+        
+    </script>
+</body>
+</html>

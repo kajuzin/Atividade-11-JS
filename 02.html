@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+<body>
+    <script>
+        const tipoinvestimento = Number(prompt("Tipo de investimento 1 ou 2? "))
+        const valorinvestimento = Number(prompt("Valor em reais: "))
+        const porcentagempoupanca = valorinvestimento * 0.05 
+        const porcentagemrendafixa = valorinvestimento * 0.10 
+        const valorcorrigidopoupanca = porcentagempoupanca + valorinvestimento
+        const valorcorrigidorendafixa = porcentagemrendafixa + valorinvestimento
+
+            if(tipoinvestimento == 1){
+                alert(`Valor corrigido é de: R$${valorcorrigidopoupanca.toFixed(2)}`)
+            }
+
+            else{
+                alert(`Valor corrigido é de: R$${valorcorrigidorendafixa.toFixed(2)}`)
+            }
+
+        
+    </script>
+</body>
+</html>
+</body>
+</html>
